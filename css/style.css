@@ -118,34 +118,33 @@ body {
   color: #fff;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
-  border-width: 1px;
-  border-style: solid;
 }
 
 .package__link a:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.package__link a:active {
+  -webkit-box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.4);
 }
 
 .package__link--standard a {
   background: #c40d53;
-  border-color: #c40d53;
 }
 
 .package__link--popular a {
   background: #26559b;
-  border-color: #26559b;
 }
 
 .package__link--golden a {
   background: #f90;
-  border-color: #f90;
 }
 
 .package__link--ultimate a {
   background: #0d833e;
-  border-color: #0d833e;
 }
 /*# sourceMappingURL=style.css.map */
