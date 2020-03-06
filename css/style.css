@@ -123,7 +123,10 @@ body {
 }
 
 .package__link a:hover {
-  background: #fff;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .package__link--standard a {
@@ -131,17 +134,9 @@ body {
   border-color: #c40d53;
 }
 
-.package__link--standard a:hover {
-  color: #c40d53;
-}
-
 .package__link--popular a {
   background: #26559b;
   border-color: #26559b;
-}
-
-.package__link--popular a:hover {
-  color: #26559b;
 }
 
 .package__link--golden a {
@@ -149,16 +144,8 @@ body {
   border-color: #f90;
 }
 
-.package__link--golden a:hover {
-  color: #f90;
-}
-
 .package__link--ultimate a {
   background: #0d833e;
   border-color: #0d833e;
-}
-
-.package__link--ultimate a:hover {
-  color: #0d833e;
 }
 /*# sourceMappingURL=style.css.map */

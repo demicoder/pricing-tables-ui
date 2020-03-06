@@ -113,36 +113,25 @@ body {
         style: solid;
       }
       &:hover {
-        background: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
       }
     }
     &--standard a {
       background: map-get($map: $package, $key: standard);
       border-color: map-get($map: $package, $key: standard);
-      &:hover {
-        color: map-get($map: $package, $key: standard);
-      }
     }
     &--popular a {
       background: map-get($map: $package, $key: popular);
       border-color: map-get($map: $package, $key: popular);
-      &:hover {
-        color: map-get($map: $package, $key: popular);
-      }
     }
     &--golden a {
       background: map-get($map: $package, $key: golden);
       border-color: map-get($map: $package, $key: golden);
-      &:hover {
-        color: map-get($map: $package, $key: golden);
-      }
     }
     &--ultimate a {
       background: map-get($map: $package, $key: ultimate);
       border-color: map-get($map: $package, $key: ultimate);
-      &:hover {
-        color: map-get($map: $package, $key: ultimate);
-      }
     }
   }
 }
