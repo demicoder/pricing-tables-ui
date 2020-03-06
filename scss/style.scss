@@ -13,11 +13,13 @@ body {
   background: {
     image: url("../img/1.jpg");
     size: cover;
+    repeat: no-repeat;
+    attachment: fixed;
   }
 }
 .page-overlay {
   background: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -28,7 +30,7 @@ body {
   position: relative;
   z-index: 1;
   color: #fff;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -41,9 +43,10 @@ body {
   width: 25%;
   border-radius: 5px;
   overflow: hidden;
-  margin: 1%;
+  margin: 1% 2%;
   &__wrap {
     display: flex;
+    flex-direction: row;
   }
 
   &__name {
@@ -84,6 +87,7 @@ body {
 
   &__options {
     padding: 1rem;
+
     li {
       line-height: 2;
       span {
@@ -94,6 +98,27 @@ body {
         font-weight: 800;
         display: inline-block;
         padding-right: 5%;
+      }
+    }
+
+    &--standard {
+      span:first-child {
+        color: map-get($package, $key: standard);
+      }
+    }
+    &--popular {
+      span:first-child {
+        color: map-get($package, $key: popular);
+      }
+    }
+    &--golden {
+      span:first-child {
+        color: map-get($package, $key: golden);
+      }
+    }
+    &--ultimate {
+      span:first-child {
+        color: map-get($package, $key: ultimate);
       }
     }
   }
@@ -127,6 +152,17 @@ body {
     }
     &--ultimate a {
       background: map-get($map: $package, $key: ultimate);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .package {
+    width: 80%;
+    margin-bottom: 2rem;
+    &__wrap {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
