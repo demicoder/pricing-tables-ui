@@ -30,7 +30,7 @@ body {
   position: relative;
   z-index: 1;
   color: #fff;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -44,6 +44,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
   margin: 1% 2%;
+  font-size: 90%;
   &__wrap {
     display: flex;
     flex-direction: row;
@@ -54,8 +55,11 @@ body {
   }
 
   &__price {
+    font: {
+      weight: 600;
+      size: 1.2rem;
+    }
     span {
-      font-weight: 600;
       font-size: 3rem;
     }
   }
@@ -82,14 +86,13 @@ body {
   &__body {
     background: #fff;
     color: #000;
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   &__options {
-    padding: 1rem;
-
+    margin: 0 0 1rem 0;
     li {
-      line-height: 2;
+      line-height: 2.5;
       span {
         font-weight: 600;
       }
@@ -127,12 +130,14 @@ body {
     text-align: center;
     a {
       text-decoration: none;
-      display: inline-block;
+      display: block;
       text-align: center;
+      // width:100%;
       padding: 0.5rem 1rem;
       border-radius: 4px;
       color: #fff;
       transition: 0.4s ease-out;
+      font-weight: 600;
       &:hover {
         transform: translateY(-3px);
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
@@ -156,7 +161,19 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+.footer {
+  text-align: center;
+  margin: 2rem 0;
+  a {
+    text-decoration: underline;
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
   .package {
     width: 80%;
     margin-bottom: 2rem;

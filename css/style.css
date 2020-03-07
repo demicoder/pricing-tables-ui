@@ -31,7 +31,7 @@ body {
   position: relative;
   z-index: 1;
   color: #fff;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -45,6 +45,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
   margin: 1% 2%;
+  font-size: 90%;
 }
 
 .package__wrap {
@@ -61,8 +62,12 @@ body {
   font-size: 2rem;
 }
 
-.package__price span {
+.package__price {
   font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.package__price span {
   font-size: 3rem;
 }
 
@@ -90,15 +95,15 @@ body {
 .package__body {
   background: #fff;
   color: #000;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .package__options {
-  padding: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 .package__options li {
-  line-height: 2;
+  line-height: 2.5;
 }
 
 .package__options li span {
@@ -133,13 +138,14 @@ body {
 
 .package__link a {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   text-align: center;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   color: #fff;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
+  font-weight: 600;
 }
 
 .package__link a:hover {
@@ -170,7 +176,21 @@ body {
   background: #0d833e;
 }
 
-@media (max-width: 600px) {
+.footer {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.footer a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
   .package {
     width: 80%;
     margin-bottom: 2rem;
